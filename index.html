@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Street Fighter Clone</title>
+    <!-- CSS STYLING -->
+     <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+        }
+
+        body,
+
+        canvas {
+            background-color: #000;
+        }
+
+        canvas {
+            width: 100%;
+            object-fit: contain;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+
+            /* display: block;
+            margin: 0 auto; */
+            /* background-color: yellow; */
+        }
+
+        img {
+            display: none;
+        }
+
+     </style>
+    <!-- JAVASCRIPT -->
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <canvas>
+        <img src="./images/ken.png" alt="Ken">
+        <img src="./images/background.png" alt="background">
+    </canvas>
+</body>
+</html>
